@@ -1,0 +1,5 @@
+DATA UJI CCTV - KELOMPOK 9
+Sumber pengujian: perangkat CCTV KOTA, LAN 10.72.96.0/19.
+Tujuan pengujian: unggah FTP ke ftp.k9.smartcity.lab.
+Berkas teks ini mensimulasikan berkas rekaman untuk uji transfer.
+Tidak berisi rekaman kamera, identitas orang, atau data CCTV asli.
