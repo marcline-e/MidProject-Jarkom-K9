@@ -1,4 +1,4 @@
-# Anggota A — Subnetting, Static Routing, dan NAT (Kelompok 9, skema VLSM)
+# Anggota A: Subnetting, Static Routing, dan NAT (Kelompok 9, skema VLSM)
 
 Sumber angka: `K9_Subnetting.xlsx` (sheet **VLSM** dan **IP Interface VLSM**).
 Blok dasar: `10.72.0.0/16` (oktet ke-2 = 8 × 9 = 72).
@@ -28,17 +28,39 @@ Blok dasar: `10.72.0.0/16` (oktet ke-2 = 8 × 9 = 72).
 | 19 | PUSAT–BARAT | L5 | 2 | 10.72.241.48/30 | .49 (PUSAT) – .50 (BARAT) | 10.72.241.51 | – |
 | 20 | UTARA–PELABUHAN | L6 | 2 | 10.72.241.52/30 | .53 (UTARA) – .54 (PELABUHAN) | 10.72.241.55 | – |
 
-Pemakaian VLSM: 42.092 / 65.536 = **64,23%** (blok induk /16). Alamat kosong pertama `10.72.241.56` → disarankan untuk link L7 (OSPF): `10.72.241.56/30`.
+Kebutuhan host: 42.092 / 65.536 = **64,23%** dari blok induk `/16`.
+Blok subnet yang dialokasikan berjumlah **61.752 alamat (94,23%)**, termasuk network dan broadcast.
+Sisa sebelum L7 adalah 3.784 alamat. Alamat kosong pertama `10.72.241.56` digunakan untuk L7 OSPF: `10.72.241.56/30`.
 
-Tambahan dari soal Mid-Project: R-PUSAT–R-ISP `203.0.113.36/30` (PUSAT `.37`, ISP `.38`), server `8.8.8.8/24` (gateway `8.8.8.1`), tunnel GRE `192.168.9.0/30`.
+Tambahan Mid-Project: R-PUSAT–R-ISP `203.0.113.36/30` (PUSAT `.37`, ISP `.38`),
+server `8.8.8.8/24` (gateway `8.8.8.1`), GRE utama `192.168.9.0/30`.
+File OSPF menambah GRE cadangan `192.168.9.4/30`, sesuai keputusan kelompok.
+
+### Perbandingan CIDR dan revisi UTS
+
+VLSM dipilih untuk implementasi karena alokasi berurutan cukup ditampung `10.72.0.0/16`.
+Pohon CIDR pada workbook memakai `10.72.0.0/14`: penggabungan blok dilakukan per router,
+lalu per cabang. Pemakaian berdasarkan kebutuhan host pada blok CIDR adalah **16,06%**.
+Alamat implementasi mengikuti sheet VLSM; sheet CIDR menjadi hasil perhitungan pembanding.
+
+Workbook memuat 20 alokasi VLSM, 20 alokasi CIDR, 12 simpul supernet, dan 12 baris revisi.
+Perbaikan meliputi host pertama, batas host/broadcast, alignment link `/30`, LAN lokal PUSAT,
+serta penempatan L6 pada pohon CIDR. Foto sumber tersedia di [UTS Tulis](UTS%20Tulis/).
+
+- [Tabel kebutuhan host](screenshots/subnetting-kebutuhan.png)
+- [Tabel VLSM](screenshots/subnetting-vlsm.png)
+- [Tabel CIDR](screenshots/subnetting-cidr.png)
+- [Pohon supernet CIDR](screenshots/subnetting-supernet-cidr.png)
+- [Revisi jawaban UTS](screenshots/subnetting-revisi.png)
+- [IP interface](screenshots/subnetting-interface.png)
 
 ## 2. Static Routing (Soal 3)
 
 Prinsip:
-- Router cabang (R-DC, R-SELATAN, R-TIMUR, R-BARAT, R-PELABUHAN) cukup **default route ke router di atasnya**.
+- Semua default route mengarah ke upstream. R-PELABUHAN juga mempunyai dua route LAN melalui GRE dan route endpoint fisik.
 - R-UTARA: default route ke R-PUSAT + static route ke LAN R-PELABUHAN.
 - R-PUSAT: default route ke R-ISP + static route ke **semua LAN** di bawahnya.
-- Route ditulis memakai **next-hop IP**, jadi tidak bergantung pada nama port fisik yang dipilih Anggota B.
+- Konfigurasi berikut sesuai file final static, termasuk route GRE. Pemetaan port ada di [K9_PT_Config.md](K9_PT_Config.md).
 
 ### R-PUSAT
 ```
@@ -50,10 +72,11 @@ ip route 10.72.239.0 255.255.255.0 10.72.241.34
 ! R-UTARA (via L2)
 ip route 10.72.0.0 255.255.192.0 10.72.241.38
 ip route 10.72.236.0 255.255.254.0 10.72.241.38
-! R-PELABUHAN (via L2 -> R-UTARA), termasuk link L6
-ip route 10.72.160.0 255.255.224.0 10.72.241.38
-ip route 10.72.240.0 255.255.255.128 10.72.241.38
+! LAN Pelabuhan lewat GRE; endpoint GRE tetap lewat jaringan fisik
+ip route 10.72.160.0 255.255.224.0 192.168.9.2
+ip route 10.72.240.0 255.255.255.128 192.168.9.2
 ip route 10.72.241.52 255.255.255.252 10.72.241.38
+ip route 10.72.241.54 255.255.255.255 10.72.241.38
 ! R-SELATAN (via L3)
 ip route 10.72.64.0 255.255.224.0 10.72.241.42
 ip route 10.72.240.128 255.255.255.128 10.72.241.42
@@ -95,6 +118,9 @@ ip route 0.0.0.0 0.0.0.0 10.72.241.49
 ### R-PELABUHAN
 ```
 ip route 0.0.0.0 0.0.0.0 10.72.241.53
+ip route 10.72.241.37 255.255.255.255 10.72.241.53
+ip route 10.72.224.0 255.255.248.0 192.168.9.1
+ip route 10.72.241.0 255.255.255.224 192.168.9.1
 ```
 
 ### R-ISP
@@ -102,65 +128,88 @@ Tidak ada `ip route` sama sekali. Kedua jaringannya (`203.0.113.36/30` dan `8.8.
 
 ## 3. NAT Overload (Soal 5)
 
-Ganti nama interface di dalam `< >` dengan port yang dipakai Anggota B di R-PUSAT. Versi dengan nama port final ada di `K9_PT_Config.md`.
+NAT berada di R-PUSAT. Port FastEthernet HWIC-4ESW menggunakan SVI sebagai interface Layer 3.
 
 ```
 ! ACL: seluruh alamat privat internal kelompok 9
 access-list 1 permit 10.72.0.0 0.0.255.255
 
 ! Interface ke R-ISP
-interface <IF-KE-R-ISP>
+interface GigabitEthernet0/0
  ip address 203.0.113.37 255.255.255.252
  ip nat outside
  no shutdown
 
 ! Semua interface ke arah dalam: L1, L2, L3, L4, L5, LAN Pegawai, LAN Server Balai Kota
-interface <IF-L1>
+interface GigabitEthernet0/1
  ip nat inside
-interface <IF-L2>
+interface GigabitEthernet0/2
  ip nat inside
-interface <IF-L3>
+interface Vlan10
  ip nat inside
-interface <IF-L4>
+interface Vlan20
  ip nat inside
-interface <IF-L5>
+interface Vlan30
  ip nat inside
-interface <IF-LAN-PEGAWAI>
+interface Vlan50
  ip nat inside
-interface <IF-LAN-SERVER-BALAIKOTA>
+interface Vlan40
  ip nat inside
+exit
 
 ! PAT: semua host keluar memakai IP publik 203.0.113.37
-ip nat inside source list 1 interface <IF-KE-R-ISP> overload
+ip nat inside source list 1 interface GigabitEthernet0/0 overload
 ```
 
 R-ISP (hanya IP, tanpa route):
 ```
-interface <IF-KE-R-PUSAT>
+interface GigabitEthernet0/0
  ip address 203.0.113.38 255.255.255.252
  no shutdown
-interface <IF-KE-SERVER>
+interface GigabitEthernet0/1
  ip address 8.8.8.1 255.255.255.0
  no shutdown
 ```
 Server 8.8.8.8: IP `8.8.8.8`, mask `255.255.255.0`, gateway `8.8.8.1`.
 
-## 4. Verifikasi & Screenshot
+## 4. Verifikasi dan screenshot
 
-| Cek | Perintah | Hasil yang diharapkan |
+| Cek | Perintah | Hasil pada pengujian native |
 |---|---|---|
-| Tabel routing R-PUSAT | `show ip route static` | 13 route `S` ke LAN + `S*` 0.0.0.0/0 via 203.0.113.38 |
+| Tabel routing R-PUSAT | `show ip route static` | 12 route LAN, route L6 `/30`, endpoint `/32`, default ISP: total 15 |
 | Tabel routing R-UTARA | `show ip route static` | `S*` via .37 + 2 route ke LAN Pelabuhan via .54 |
 | R-ISP bersih | `show ip route` di R-ISP | Hanya `C`/`L` untuk 203.0.113.36/30 dan 8.8.8.0/24, **tanpa 10.x** |
-| Antar-LAN | Ping dari PC Kantor Pelabuhan ke PC CCTV Kota, dari WiFi Barat ke Server DC, dst. | Reply |
-| Internet | `ping 8.8.8.8` dari 1 host tiap wilayah (Balai Kota, DC, Utara, Pelabuhan, Selatan, Timur, Barat) | Reply |
+| Antar-LAN | Semua pasangan 15 endpoint internal | 210 arah mencapai 4/4 setelah warm-up |
+| Internet | `ping 8.8.8.8` dari 15 endpoint internal | 15/15 mencapai 4/4 melalui NAT |
 | Translasi NAT | `show ip nat translations` di R-PUSAT (setelah ping) | Inside global `203.0.113.37`, inside local `10.72.x.x` |
 | Konfigurasi NAT | `show running-config \| include nat` | Baris `ip nat inside/outside` dan `overload` |
 
-Screenshot untuk laporan: sheet VLSM, CIDR, Supernet CIDR, dan Revisi; output `show ip route` R-PUSAT, R-UTARA, R-ISP; `show running-config | include nat`; `show ip nat translations`; `ping 8.8.8.8` dari setiap wilayah.
+![Route static R-PUSAT](screenshots/static-routes-pusat.png)
+
+![Translasi NAT setelah ping](screenshots/static-nat-translations.png)
+
+Bukti konfigurasi: [R-UTARA](screenshots/static-routes-utara.png),
+[R-ISP](screenshots/static-routes-isp.png), [NAT](screenshots/static-nat-config.png).
+
+| Wilayah | Host sumber | Bukti internet 4/4 |
+|---|---|---|
+| Pusat | PC - PEGAWAI | [Screenshot](screenshots/static-internet-pusat.png) |
+| DC | CCTV KOTA | [Screenshot](screenshots/static-internet-dc.png) |
+| Utara | SENSOR LANTAS UTARA | [Screenshot](screenshots/static-internet-utara.png) |
+| Pelabuhan | PC KANTOR | [Screenshot](screenshots/static-internet-pelabuhan.png) |
+| Selatan | PJU SELATAN | [Screenshot](screenshots/static-internet-selatan.png) |
+| Timur | SENSOR BANJIR | [Screenshot](screenshots/static-internet-timur.png) |
+| Barat | PUSKESMAS | [Screenshot](screenshots/static-internet-barat.png) |
+
+Log lengkap beserta retry saat warm-up: [mesh static](evidence/static-mesh.json),
+[internet static](evidence/static-internet.json), [mesh OSPF](evidence/ospf-mesh.json),
+dan [internet OSPF](evidence/ospf-internet.json).
 
 ## 5. Catatan untuk anggota lain
 
-- **Anggota B**: IP interface router, gateway, dan alamat server ada di sheet **IP Interface VLSM**. Di link, router atas memakai host pertama dan router bawah host kedua; next-hop di atas bergantung pada aturan ini. Pool DHCP: exclude `.1` (gateway) dan IP server statis.
-- **Anggota C (GRE)**: tunnel destination dari R-PUSAT = `10.72.241.54` (R-PELABUHAN, L6), sudah bisa dijangkau lewat route `10.72.241.52/30`. Agar trafik Balai Kota ↔ Pelabuhan lewat tunnel, ubah next-hop route LAN Pelabuhan di R-PUSAT menjadi `192.168.9.2`. Di R-PELABUHAN, tambahkan route `10.72.224.0/21` dan `10.72.241.0/27` via `192.168.9.1`.
-- **Anggota C (OSPF)**: L7 R-DC ↔ R-UTARA memakai `10.72.241.56/30` (alamat kosong pertama setelah L6).
+- **DHCP**: Kantor Pelabuhan mengecualikan hanya `.1`, sehingga tersisa 125 lease untuk 120 klien.
+  CCTV memiliki 6.000 lease pada SERVER DC; gateway dan IP server berada di luar rentang lease.
+- **GRE static**: konfigurasi endpoint dan LAN di atas memerlukan Tunnel0 aktif;
+  lihat [GRE dan IPsec](AnggotaC_GRE_OSPF_Layanan.md).
+- **OSPF**: L7 memakai `10.72.241.56/30`. Semua static antar-router dihapus pada salinan OSPF;
+  hanya default ISP di R-PUSAT yang tetap static.
