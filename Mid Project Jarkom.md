@@ -5,7 +5,9 @@ Jadwal Demo : TBA (minggu ke-10)
 Pemerintah Kota Surabaya membangun jaringan Smart City. Rancangan pengalamatan kalian hitung saat UTS dengan dua cara: VLSM dan CIDR. Pilih salah satu skema, lalu bangun jaringan tersebut di Cisco Packet Tracer, lengkap dengan routing, layanan internet, dan layanan aplikasi yang dibutuhkan oleh sebuah kota cerdas.
 
 Catatan: Kebutuhan host untuk setiap LAN dan pengalamatannya akan diberikan saat UTS. Kalian bisa berlatih terlebih dahulu dengan mencoba merakit topologi dan melakukan konfigurasi menggunakan alamat sementara.
-![](./Attachments/Mid%20Project%20Jarkom-1792567411307.webp)
+![Referensi topologi backbone L1–L6 dari catatan UTS Kelompok 9](./UTS%20Tulis/WhatsApp%20Image%202026-10-23%20at%2015.45.30%20%281%29.jpeg)
+
+*Lampiran gambar soal asli tidak tersedia dalam repository. Gambar di atas adalah salinan topologi pada catatan UTS.*
 
 ## Pengalamatan Jaringan
 
@@ -115,4 +117,3 @@ MidProject `Jarkom_K<nomor kelompok>_<3 angka NRP terakhir 1>_<2>_<3>.ZIP`
 | 9   | Demo Uji 1 (kelompok): test case berhasil dan tanya jawab dijawab dengan benar                     | 10    |
 | 10  | Demo Uji 2 (individu): kesalahan berhasil ditemukan, diperbaiki, dan dijelaskan                    | 15    |
 |     | Total                                                                                              | 100   |
-
