@@ -1,0 +1,16 @@
+[
+  {
+    "output": "show ip route ospf\n     10.0.0.0/8 is variably subnetted, 24 subnets, 10 masks\nO       10.72.0.0 [110/2] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.64.0 [110/4] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.96.0 [110/3] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.128.0 [110/4] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.192.0 [110/4] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.224.0 [100/1001] via 192.168.9.1, 00:01:13, Tunnel0\nO       10.72.232.0 [110/4] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.236.0 [110/2] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.238.0 [110/4] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.239.0 [110/3] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.240.128 [110/4] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.241.0 [100/1001] via 192.168.9.1, 00:01:13, Tunnel0\nO       10.72.241.32 [110/3] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.241.36 [110/2] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.241.40 [110/3] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.241.44 [110/3] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.241.48 [110/3] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO       10.72.241.56 [110/2] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\nO*E2 0.0.0.0/0 [110/1] via 10.72.241.53, 00:01:28, GigabitEthernet0/0\n\nR-PELABUHAN#",
+    "completed": {
+      "inputCommand": "show ip route ospf",
+      "status": 0
+    }
+  },
+  {
+    "output": "show ip ospf neighbor\n\n\nNeighbor ID     Pri   State           Dead Time   Address         Interface\n3.3.3.3           1   FULL/BDR        00:00:38    10.72.241.53    GigabitEthernet0/0\n11.11.11.11       0   FULL/  -        00:00:38    192.168.9.1     Tunnel0\nR-PELABUHAN#",
+    "completed": {
+      "inputCommand": "show ip ospf neighbor",
+      "status": 0
+    }
+  }
+]

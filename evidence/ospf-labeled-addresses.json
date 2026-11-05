@@ -1,0 +1,122 @@
+{
+  "HP-WIFI-UTARA": {
+    "ip": "10.72.0.11",
+    "mask": "255.255.192.0",
+    "gateway": "10.72.0.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "HP-WIFI-SELATAN": {
+    "ip": "10.72.64.11",
+    "mask": "255.255.224.0",
+    "gateway": "10.72.64.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "CCTV KOTA": {
+    "ip": "10.72.96.11",
+    "mask": "255.255.224.0",
+    "gateway": "10.72.96.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "HP-WIFI-TIMUR": {
+    "ip": "10.72.128.11",
+    "mask": "255.255.224.0",
+    "gateway": "10.72.128.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "SCADA PELABUHAN": {
+    "ip": "10.72.160.11",
+    "mask": "255.255.224.0",
+    "gateway": "10.72.160.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "HP-WIFI-BARAT": {
+    "ip": "10.72.192.11",
+    "mask": "255.255.224.0",
+    "gateway": "10.72.192.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "PC - PEGAWAI": {
+    "ip": "10.72.224.11",
+    "mask": "255.255.248.0",
+    "gateway": "10.72.224.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "SENSOR BANJIR": {
+    "ip": "10.72.232.11",
+    "mask": "255.255.252.0",
+    "gateway": "10.72.232.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "SENSOR LANTAS UTARA": {
+    "ip": "10.72.236.11",
+    "mask": "255.255.254.0",
+    "gateway": "10.72.236.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "PUSKESMAS": {
+    "ip": "10.72.238.11",
+    "mask": "255.255.255.0",
+    "gateway": "10.72.238.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "SERVER DC": {
+    "ip": "10.72.239.2",
+    "mask": "255.255.255.0",
+    "gateway": "10.72.239.1",
+    "dns": "10.72.239.2",
+    "dhcp": false,
+    "up": true
+  },
+  "PC KANTOR": {
+    "ip": "10.72.240.2",
+    "mask": "255.255.255.128",
+    "gateway": "10.72.240.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "PJU SELATAN": {
+    "ip": "10.72.240.139",
+    "mask": "255.255.255.128",
+    "gateway": "10.72.240.129",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  },
+  "SERVER BALAI KOTA": {
+    "ip": "10.72.241.2",
+    "mask": "255.255.255.224",
+    "gateway": "10.72.241.1",
+    "dns": "10.72.239.2",
+    "dhcp": false,
+    "up": true
+  },
+  "SEKOLAH": {
+    "ip": "10.72.238.12",
+    "mask": "255.255.255.0",
+    "gateway": "10.72.238.1",
+    "dns": "10.72.239.2",
+    "dhcp": true,
+    "up": true
+  }
+}

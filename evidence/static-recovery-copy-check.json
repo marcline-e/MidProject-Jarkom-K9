@@ -1,0 +1,48 @@
+{
+  "R-PUSAT": [
+    [
+      "show running-config",
+      {
+        "first": 0,
+        "second": "Building configuration...\n\nCurrent configuration : 3864 bytes\n!\nversion 15.1\nno service timestamps log datetime msec\nno service timestamps debug datetime msec\nno service password-encryption\n!\nhostname R-PUSAT\n!\n!\n!\n!\nip dhcp excluded-address 10.72.224.1 10.72.224.10\n!\nip dhcp pool POOL-PEGAWAI\n network 10.72.224.0 255.255.248.0\n default-router 10.72.224.1\n dns-server 10.72.239.2\n!\n!\n!\nip cef\nno ipv6 cef\n!\n!\n!\n!\nlicense udi pid CISCO2911/K9 sn FTX152496DA-\nlicense boot module c2900 technology-package securityk9\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\nspanning-tree mode pvst\n!\n!\n!\n!\n!\n!\ninterface Tunnel0\n ip address 192.168.9.1 255.255.255.252\n mtu 1476\n tunnel source GigabitEthernet0/2\n tunnel destination 10.72.241.54\n!\n!\ninterface GigabitEthernet0/0\n description Link to R-ISP\n ip address 203.0.113.37 255.255.255.252\n ip nat outside\n duplex auto\n speed auto\n!\ninterface GigabitEthernet0/1\n description L1 to R-DC\n ip address 10.72.241.33 255.255.255.252\n ip nat inside\n duplex auto\n speed auto\n!\ninterface GigabitEthernet0/2\n description L2 to R-UTARA\n ip address 10.72.241.37 255.255.255.252\n ip nat inside\n duplex auto\n speed auto\n!\ninterface FastEthernet0/0/0\n description L3 Cable Port to R-SELATAN\n switchport access vlan 10\n switchport mode access\n!\ninterface FastEthernet0/0/1\n description L4 to R-TIMUR\n switchport access vlan 20\n switchport mode access\n!\ninterface FastEthernet0/0/2\n description L5 to R-BARAT\n switchport access vlan 30\n switchport mode access\n!\ninterface FastEthernet0/0/3\n description LAN Server Balai Kota\n switchport access vlan 40\n switchport mode access\n!\ninterface FastEthernet0/1/0\n description LAN Pegawai Balai Kota\n switchport access vlan 50\n switchport mode access\n!\ninterface FastEthernet0/1/1\n switchport mode access\n!\ninterface FastEthernet0/1/2\n switchport mode access\n!\ninterface FastEthernet0/1/3\n switchport mode access\n!\ninterface FastEthernet0/2/0\n switchport access vlan 30\n switchport mode access\n!\ninterface FastEthernet0/2/1\n switchport mode access\n!\ninterface FastEthernet0/2/2\n switchport mode access\n!\ninterface FastEthernet0/2/3\n switchport mode access\n!\ninterface GigabitEthernet0/3/0\n description LAN Balai Kota\n no ip address\n shutdown\n!\ninterface Vlan1\n no ip address\n!\ninterface Vlan10\n description L3 to R-SELATAN\n mac-address 00e0.a385.7701\n ip address 10.72.241.41 255.255.255.252\n ip nat inside\n!\ninterface Vlan20\n description L4 to R-TIMUR\n mac-address 00e0.a385.7702\n ip address 10.72.241.45 255.255.255.252\n ip nat inside\n!\ninterface Vlan30\n description L5 to R-BARAT\n mac-address 00e0.a385.7703\n ip address 10.72.241.49 255.255.255.252\n ip nat inside\n!\ninterface Vlan40\n description Gateway Server Balai Kota\n mac-address 00e0.a385.7704\n ip address 10.72.241.1 255.255.255.224\n ip nat inside\n!\ninterface Vlan50\n description Gateway Pegawai Balai Kota\n mac-address 00e0.a385.7705\n ip address 10.72.224.1 255.255.248.0\n ip nat inside\n!\nip nat inside source list 1 interface GigabitEthernet0/0 overload\nip classless\nip route 0.0.0.0 0.0.0.0 203.0.113.38 \nip route 10.72.96.0 255.255.224.0 10.72.241.34 \nip route 10.72.239.0 255.255.255.0 10.72.241.34 \nip route 10.72.0.0 255.255.192.0 10.72.241.38 \nip route 10.72.236.0 255.255.254.0 10.72.241.38 \nip route 10.72.241.52 255.255.255.252 10.72.241.38 \nip route 10.72.64.0 255.255.224.0 10.72.241.42 \nip route 10.72.240.128 255.255.255.128 10.72.241.42 \nip route 10.72.128.0 255.255.224.0 10.72.241.46 \nip route 10.72.232.0 255.255.252.0 10.72.241.46 \nip route 10.72.192.0 255.255.224.0 10.72.241.50 \nip route 10.72.238.0 255.255.255.0 10.72.241.50 \nip route 10.72.241.54 255.255.255.255 10.72.241.38 \nip route 10.72.160.0 255.255.224.0 192.168.9.2 \nip route 10.72.240.0 255.255.255.128 192.168.9.2 \n!\nip flow-export version 9\n!\n!\naccess-list 1 permit 10.72.0.0 0.0.255.255\naccess-list 110 permit gre host 10.72.241.37 host 10.72.241.54\n!\nno cdp run\n!\n!\n!\n!\n!\nline con 0\n!\nline aux 0\n!\nline vty 0 4\n login\n!\n!\n!\nend\n\n\n\n"
+      }
+    ],
+    [
+      "show crypto isakmp sa",
+      {
+        "first": 0,
+        "second": "IPv4 Crypto ISAKMP SA\ndst             src             state          conn-id slot status\n\nIPv6 Crypto ISAKMP SA\n\n\n\n"
+      }
+    ],
+    [
+      "show crypto ipsec sa",
+      {
+        "first": 0,
+        "second": "\nNo SAs found\n\n"
+      }
+    ]
+  ],
+  "R-PELABUHAN": [
+    [
+      "show running-config",
+      {
+        "first": 0,
+        "second": "Building configuration...\n\nCurrent configuration : 1601 bytes\n!\nversion 15.1\nno service timestamps log datetime msec\nno service timestamps debug datetime msec\nno service password-encryption\n!\nhostname R-PELABUHAN\n!\n!\n!\n!\nip dhcp excluded-address 10.72.160.1 10.72.160.10\nip dhcp excluded-address 10.72.240.1\n!\nip dhcp pool POOL-SCADA-PELABUHAN\n network 10.72.160.0 255.255.224.0\n default-router 10.72.160.1\n dns-server 10.72.239.2\nip dhcp pool POOL-KANTOR-PELABUHAN\n network 10.72.240.0 255.255.255.128\n default-router 10.72.240.1\n dns-server 10.72.239.2\n!\n!\n!\nip cef\nno ipv6 cef\n!\n!\n!\n!\nlicense udi pid CISCO2911/K9 sn FTX15245E95-\nlicense boot module c2900 technology-package securityk9\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\nspanning-tree mode pvst\n!\n!\n!\n!\n!\n!\ninterface Tunnel0\n ip address 192.168.9.2 255.255.255.252\n mtu 1476\n tunnel source GigabitEthernet0/0\n tunnel destination 10.72.241.37\n!\n!\ninterface GigabitEthernet0/0\n description L6 from R-UTARA\n ip address 10.72.241.54 255.255.255.252\n duplex auto\n speed auto\n!\ninterface GigabitEthernet0/1\n description LAN Pelabuhan\n ip address 10.72.160.1 255.255.224.0\n duplex auto\n speed auto\n!\ninterface GigabitEthernet0/2\n description LAN Kantor Pelabuhan\n ip address 10.72.240.1 255.255.255.128\n duplex auto\n speed auto\n!\ninterface Vlan1\n no ip address\n!\nip classless\nip route 0.0.0.0 0.0.0.0 10.72.241.53 \nip route 10.72.241.37 255.255.255.255 10.72.241.53 \nip route 10.72.224.0 255.255.248.0 192.168.9.1 \nip route 10.72.241.0 255.255.255.224 192.168.9.1 \n!\nip flow-export version 9\n!\n!\naccess-list 110 permit gre host 10.72.241.54 host 10.72.241.37\n!\n!\n!\n!\n!\nline con 0\n!\nline aux 0\n!\nline vty 0 4\n login\n!\n!\n!\nend\n\n\n\n"
+      }
+    ],
+    [
+      "show crypto isakmp sa",
+      {
+        "first": 0,
+        "second": "IPv4 Crypto ISAKMP SA\ndst             src             state          conn-id slot status\n\nIPv6 Crypto ISAKMP SA\n\n\n\n"
+      }
+    ],
+    [
+      "show crypto ipsec sa",
+      {
+        "first": 0,
+        "second": "\nNo SAs found\n\n"
+      }
+    ]
+  ]
+}

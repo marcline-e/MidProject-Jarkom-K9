@@ -1,0 +1,48 @@
+[
+  {
+    "PC - PEGAWAI": {
+      "output": "ping 10.72.240.2\n\nPinging 10.72.240.2 with 32 bytes of data:\n\nRequest timed out.\nRequest timed out.\nRequest timed out.\nReply from 10.72.240.2: bytes=32 time<1ms TTL=126\n\nPing statistics for 10.72.240.2:\n    Packets: Sent = 4, Received = 1, Lost = 3 (75% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 10.72.240.2",
+        "status": 0
+      }
+    },
+    "PC KANTOR": {
+      "output": "ping 10.72.224.11\n\nPinging 10.72.224.11 with 32 bytes of data:\n\nRequest timed out.\nRequest timed out.\nRequest timed out.\nReply from 10.72.224.11: bytes=32 time<1ms TTL=126\n\nPing statistics for 10.72.224.11:\n    Packets: Sent = 4, Received = 1, Lost = 3 (75% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 10.72.224.11",
+        "status": 0
+      }
+    },
+    "CCTV KOTA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 2, Lost = 2 (50% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    }
+  },
+  {
+    "PC - PEGAWAI": {
+      "output": "ping 10.72.240.2\n\nPinging 10.72.240.2 with 32 bytes of data:\n\nReply from 10.72.240.2: bytes=32 time=1ms TTL=126\nReply from 10.72.240.2: bytes=32 time<1ms TTL=126\nReply from 10.72.240.2: bytes=32 time<1ms TTL=126\nReply from 10.72.240.2: bytes=32 time<1ms TTL=126\n\nPing statistics for 10.72.240.2:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 1ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 10.72.240.2",
+        "status": 0
+      }
+    },
+    "PC KANTOR": {
+      "output": "ping 10.72.224.11\n\nPinging 10.72.224.11 with 32 bytes of data:\n\nReply from 10.72.224.11: bytes=32 time<1ms TTL=126\nReply from 10.72.224.11: bytes=32 time=1ms TTL=126\nReply from 10.72.224.11: bytes=32 time<1ms TTL=126\nReply from 10.72.224.11: bytes=32 time=3ms TTL=126\n\nPing statistics for 10.72.224.11:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 3ms, Average = 1ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 10.72.224.11",
+        "status": 0
+      }
+    },
+    "CCTV KOTA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    }
+  }
+]

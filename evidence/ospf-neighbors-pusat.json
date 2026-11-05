@@ -1,0 +1,16 @@
+[
+  {
+    "output": "show running-config | section router ospf\nrouter ospf 1\n router-id 1.1.1.1\n log-adjacency-changes\n redistribute ospf 2 subnets \n network 10.72.241.32 0.0.0.31 area 0\n default-information originate\nrouter ospf 2\n router-id 11.11.11.11\n log-adjacency-changes\n passive-interface Vlan40\n passive-interface Vlan50\n network 192.168.9.0 0.0.0.7 area 0\n network 10.72.224.0 0.0.7.255 area 0\n network 10.72.241.0 0.0.0.31 area 0\n distance 100\nR-PUSAT#",
+    "completed": {
+      "inputCommand": "show running-config | section router ospf",
+      "status": 0
+    }
+  },
+  {
+    "output": "show ip ospf neighbor\n\n\nNeighbor ID     Pri   State           Dead Time   Address         Interface\n5.5.5.5           1   FULL/DR         00:00:35    10.72.241.42    Vlan10\n3.3.3.3           1   FULL/DR         00:00:35    10.72.241.38    GigabitEthernet0/2\n7.7.7.7           1   FULL/DR         00:00:35    10.72.241.50    Vlan30\n2.2.2.2           1   FULL/DR         00:00:35    10.72.241.34    GigabitEthernet0/1\n6.6.6.6           1   FULL/DR         00:00:35    10.72.241.46    Vlan20\n44.44.44.44       0   INIT/  -        00:00:35    192.168.9.6     Tunnel1\n44.44.44.44       0   FULL/  -        00:00:35    192.168.9.2     Tunnel0\nR-PUSAT#",
+    "completed": {
+      "inputCommand": "show ip ospf neighbor",
+      "status": 0
+    }
+  }
+]

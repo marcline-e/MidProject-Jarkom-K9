@@ -1,0 +1,107 @@
+{
+  "HP-WIFI-UTARA": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "HP-WIFI-SELATAN": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "CCTV KOTA": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "HP-WIFI-TIMUR": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SCADA PELABUHAN": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "HP-WIFI-BARAT": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "PC - PEGAWAI": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SENSOR BANJIR": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SENSOR LANTAS UTARA": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "PUSKESMAS": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SERVER DC": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "PC KANTOR": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "PJU SELATAN": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SERVER BALAI KOTA": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SEKOLAH": {
+    "output": "nslookup mail.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   mail.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup mail.k9.smartcity.lab",
+      "status": 0
+    }
+  }
+}

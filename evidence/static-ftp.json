@@ -1,0 +1,3 @@
+{
+  "output": "ftp ftp.k9.smartcity.lab\nTrying to connect...ftp.k9.smartcity.lab\nConnected to ftp.k9.smartcity.lab\n220- Welcome to PT Ftp server\nUsername:cctv\n331- Username ok, need password\nPassword:************\n230- Logged in\n(passive mode On)\nftp>put rekaman-cctv-k9.txt\n\nWriting file rekaman-cctv-k9.txt to ftp.k9.smartcity.lab: \nFile transfer in progress...\n\n[Transfer complete - 272 bytes]\n\n272 bytes copied in 0.077 secs (3532 bytes/sec)\nftp>quit\n\n221- Service closing control connection.\nC:\\>"
+}

@@ -1,0 +1,23 @@
+{
+  "PC - PEGAWAI": {
+    "output": "tracert 10.72.240.2\n\nTracing route to 10.72.240.2 over a maximum of 30 hops: \n\n  1   0 ms      0 ms      0 ms      10.72.224.1\n  2   0 ms      0 ms      0 ms      192.168.9.6\n  3   11 ms     0 ms      0 ms      10.72.240.2\n\nTrace complete.\n\nC:\\>",
+    "completed": {
+      "inputCommand": "tracert 10.72.240.2",
+      "status": 0
+    }
+  },
+  "PC KANTOR": {
+    "output": "tracert 10.72.224.11\n\nTracing route to 10.72.224.11 over a maximum of 30 hops: \n\n  1   0 ms      0 ms      0 ms      10.72.240.1\n  2   0 ms      0 ms      0 ms      192.168.9.5\n  3   1 ms      13 ms     0 ms      10.72.224.11\n\nTrace complete.\n\nC:\\>",
+    "completed": {
+      "inputCommand": "tracert 10.72.224.11",
+      "status": 0
+    }
+  },
+  "HP-WIFI-UTARA": {
+    "output": "tracert 8.8.8.8\n\nTracing route to 8.8.8.8 over a maximum of 30 hops: \n\n  1   116 ms    42 ms     59 ms     10.72.0.1\n  2   41 ms     65 ms     45 ms     10.72.241.58\n  3   48 ms     39 ms     57 ms     10.72.241.33\n  4   76 ms     24 ms     24 ms     203.0.113.38\n  5   *         59 ms     16 ms     8.8.8.8\n\nTrace complete.\n\nC:\\>",
+    "completed": {
+      "inputCommand": "tracert 8.8.8.8",
+      "status": 0
+    }
+  }
+}

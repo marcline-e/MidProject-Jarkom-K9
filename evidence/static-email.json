@@ -1,0 +1,62 @@
+{
+  "PC - PEGAWAI": {
+    "sent": [
+      {
+        "body": "Email dua arah melalui jaringan static Kelompok 9 dengan GRE dan IPsec.",
+        "dest": "user-pelabuhan@k9.smartcity.lab",
+        "responseType": 2,
+        "subject": "Verifikasi Static K9 - PC - PEGAWAI"
+      }
+    ],
+    "mail": [
+      {
+        "content": "Kantor Pelabuhan menerima laporan CCTV. Terima kasih. Salam, Pegawai Pelabuhan.",
+        "dateTime": "10.31.2026 04:56:32.000 AM",
+        "from": "user-pelabuhan@k9.smartcity.lab",
+        "pduSize": 0,
+        "pduType": "Mail",
+        "rcpt": "user-pusat@k9.smartcity.lab",
+        "subject": "Balasan Kantor Pelabuhan"
+      },
+      {
+        "content": "Email dua arah melalui jaringan static Kelompok 9 dengan GRE dan IPsec.",
+        "dateTime": "10.31.2026 05:11:26.898 AM",
+        "from": "user-pelabuhan@k9.smartcity.lab",
+        "pduSize": 0,
+        "pduType": "Mail",
+        "rcpt": "user-pusat@k9.smartcity.lab",
+        "subject": "Verifikasi Static K9 - PC KANTOR"
+      }
+    ]
+  },
+  "PC KANTOR": {
+    "sent": [
+      {
+        "body": "Email dua arah melalui jaringan static Kelompok 9 dengan GRE dan IPsec.",
+        "dest": "user-pusat@k9.smartcity.lab",
+        "responseType": 2,
+        "subject": "Verifikasi Static K9 - PC KANTOR"
+      }
+    ],
+    "mail": [
+      {
+        "content": "Rekaman CCTV Kota telah diupload ke ftp.k9.smartcity.lab. Salam, Pegawai Balai Kota.",
+        "dateTime": "10.31.2026 04:52:19.000 AM",
+        "from": "user-pusat@k9.smartcity.lab",
+        "pduSize": 0,
+        "pduType": "Mail",
+        "rcpt": "user-pelabuhan@k9.smartcity.lab",
+        "subject": "Laporan CCTV Kelompok 9"
+      },
+      {
+        "content": "Email dua arah melalui jaringan static Kelompok 9 dengan GRE dan IPsec.",
+        "dateTime": "10.31.2026 05:11:24.832 AM",
+        "from": "user-pusat@k9.smartcity.lab",
+        "pduSize": 0,
+        "pduType": "Mail",
+        "rcpt": "user-pelabuhan@k9.smartcity.lab",
+        "subject": "Verifikasi Static K9 - PC - PEGAWAI"
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "HP-WIFI-UTARA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time=41ms TTL=125\nReply from 8.8.8.8: bytes=32 time=34ms TTL=125\nReply from 8.8.8.8: bytes=32 time=9ms TTL=125\nReply from 8.8.8.8: bytes=32 time=42ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 9ms, Maximum = 42ms, Average = 31ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "HP-WIFI-SELATAN": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time=51ms TTL=125\nReply from 8.8.8.8: bytes=32 time=25ms TTL=125\nReply from 8.8.8.8: bytes=32 time=17ms TTL=125\nReply from 8.8.8.8: bytes=32 time=20ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 17ms, Maximum = 51ms, Average = 28ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "CCTV KOTA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=2ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 2ms, Average = 1ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "HP-WIFI-TIMUR": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time=41ms TTL=125\nReply from 8.8.8.8: bytes=32 time=31ms TTL=125\nReply from 8.8.8.8: bytes=32 time=15ms TTL=125\nReply from 8.8.8.8: bytes=32 time=43ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 15ms, Maximum = 43ms, Average = 32ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SCADA PELABUHAN": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=11ms TTL=125\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 1ms, Maximum = 11ms, Average = 4ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "HP-WIFI-BARAT": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time=52ms TTL=125\nReply from 8.8.8.8: bytes=32 time=19ms TTL=125\nReply from 8.8.8.8: bytes=32 time=13ms TTL=125\nReply from 8.8.8.8: bytes=32 time=35ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 13ms, Maximum = 52ms, Average = 29ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "PC - PEGAWAI": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time=1ms TTL=126\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 1ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SENSOR BANJIR": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=11ms TTL=125\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 1ms, Maximum = 11ms, Average = 4ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SENSOR LANTAS UTARA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time=2ms TTL=125\nReply from 8.8.8.8: bytes=32 time=11ms TTL=125\nReply from 8.8.8.8: bytes=32 time=2ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 2ms, Maximum = 11ms, Average = 5ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "PUSKESMAS": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=11ms TTL=125\nReply from 8.8.8.8: bytes=32 time=2ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 11ms, Average = 4ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SERVER DC": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=13ms TTL=125\nReply from 8.8.8.8: bytes=32 time=10ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 13ms, Average = 7ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "PC KANTOR": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 1ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "PJU SELATAN": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time=14ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 14ms, Average = 5ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SERVER BALAI KOTA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SEKOLAH": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nRequest timed out.\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=5ms TTL=125\nReply from 8.8.8.8: bytes=32 time=2ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 1ms, Maximum = 5ms, Average = 2ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    }
+  },
+  {
+    "CCTV KOTA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 1ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SCADA PELABUHAN": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 1ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "PC - PEGAWAI": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\nReply from 8.8.8.8: bytes=32 time=1ms TTL=126\nReply from 8.8.8.8: bytes=32 time=1ms TTL=126\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 1ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SENSOR BANJIR": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=9ms TTL=125\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 9ms, Average = 2ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SENSOR LANTAS UTARA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 1ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "PUSKESMAS": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SERVER DC": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "PC KANTOR": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time=14ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=5ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 14ms, Average = 4ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "PJU SELATAN": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=19ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 19ms, Average = 4ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SERVER BALAI KOTA": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\nReply from 8.8.8.8: bytes=32 time<1ms TTL=126\nReply from 8.8.8.8: bytes=32 time=1ms TTL=126\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 1ms, Average = 0ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    },
+    "SEKOLAH": {
+      "output": "ping 8.8.8.8\n\nPinging 8.8.8.8 with 32 bytes of data:\n\nReply from 8.8.8.8: bytes=32 time=14ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\nReply from 8.8.8.8: bytes=32 time=5ms TTL=125\nReply from 8.8.8.8: bytes=32 time<1ms TTL=125\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 14ms, Average = 4ms\n\nC:\\>",
+      "completed": {
+        "inputCommand": "ping 8.8.8.8",
+        "status": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "HP-WIFI-UTARA": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "HP-WIFI-SELATAN": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\nDNS request timed out.\n\ttimeout was 15000 milli seconds.\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "CCTV KOTA": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "HP-WIFI-TIMUR": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SCADA PELABUHAN": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "HP-WIFI-BARAT": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "PC - PEGAWAI": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SENSOR BANJIR": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SENSOR LANTAS UTARA": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "PUSKESMAS": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SERVER DC": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "PC KANTOR": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "PJU SELATAN": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SERVER BALAI KOTA": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  },
+  "SEKOLAH": {
+    "output": "nslookup ftp.k9.smartcity.lab\n\nServer: [10.72.239.2]\nAddress:  10.72.239.2\n\nNon-authoritative answer:\nName:   ftp.k9.smartcity.lab\nAddress:   10.72.239.2\n           \nC:\\>",
+    "completed": {
+      "inputCommand": "nslookup ftp.k9.smartcity.lab",
+      "status": 0
+    }
+  }
+}

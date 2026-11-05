@@ -1,0 +1,16 @@
+[
+  {
+    "output": "show ip route ospf\n     10.0.0.0/8 is variably subnetted, 25 subnets, 10 masks\nO       10.72.0.0 [110/2] via 10.72.241.57, 00:01:12, Vlan1\nO       10.72.64.0 [110/3] via 10.72.241.33, 00:01:12, GigabitEthernet0/0\nO       10.72.128.0 [110/3] via 10.72.241.33, 00:01:12, GigabitEthernet0/0\nO E2    10.72.160.0 [110/20] via 10.72.241.57, 00:01:12, Vlan1\nO       10.72.192.0 [110/3] via 10.72.241.33, 00:01:12, GigabitEthernet0/0\nO E2    10.72.224.0 [110/20] via 10.72.241.33, 00:01:22, GigabitEthernet0/0\nO       10.72.232.0 [110/3] via 10.72.241.33, 00:01:12, GigabitEthernet0/0\nO       10.72.236.0 [110/2] via 10.72.241.57, 00:01:12, Vlan1\nO       10.72.238.0 [110/3] via 10.72.241.33, 00:01:12, GigabitEthernet0/0\nO E2    10.72.240.0 [110/20] via 10.72.241.57, 00:01:12, Vlan1\nO       10.72.240.128 [110/3] via 10.72.241.33, 00:01:12, GigabitEthernet0/0\nO E2    10.72.241.0 [110/20] via 10.72.241.33, 00:01:22, GigabitEthernet0/0\nO       10.72.241.36 [110/2] via 10.72.241.57, 00:01:12, Vlan1\n                     [110/2] via 10.72.241.33, 00:01:12, GigabitEthernet0/0\nO       10.72.241.40 [110/2] via 10.72.241.33, 00:01:22, GigabitEthernet0/0\nO       10.72.241.44 [110/2] via 10.72.241.33, 00:01:22, GigabitEthernet0/0\nO       10.72.241.48 [110/2] via 10.72.241.33, 00:01:12, GigabitEthernet0/0\nO       10.72.241.52 [110/2] via 10.72.241.57, 00:01:12, Vlan1\n     192.168.9.0/30 is subnetted, 2 subnets\nO E2    192.168.9.0 [110/20] via 10.72.241.33, 00:01:22, GigabitEthernet0/0\n                    [110/20] via 10.72.241.57, 00:01:02, Vlan1\n --More-- O E2    192.168.9.4 [110/20] via 10.72.241.33, 00:01:22, GigabitEthernet0/0\n                    [110/20] via 10.72.241.57, 00:01:02, Vlan1\nO*E2 0.0.0.0/0 [110/1] via 10.72.241.33, 00:01:22, GigabitEthernet0/0\n\nR-DC#",
+    "completed": {
+      "inputCommand": "show ip route ospf",
+      "status": 0
+    }
+  },
+  {
+    "output": "show ip ospf neighbor\n\n\nNeighbor ID     Pri   State           Dead Time   Address         Interface\n3.3.3.3           1   FULL/DR         00:00:30    10.72.241.57    Vlan1\n1.1.1.1           1   FULL/BDR        00:00:30    10.72.241.33    GigabitEthernet0/0\nR-DC#",
+    "completed": {
+      "inputCommand": "show ip ospf neighbor",
+      "status": 0
+    }
+  }
+]

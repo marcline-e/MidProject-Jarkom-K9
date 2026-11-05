@@ -1,0 +1,19 @@
+Checks against copied native Packet Tracer logs (not a new simulator run).
+PASS static mesh: 210 unique directed pairs at 4/4; 222 outputs including retries.
+PASS static internet: 15 unique sources at 4/4; 26 outputs including retries.
+PASS static DNS: 45 correct answers (15 clients x 3 names).
+PASS static HTTP: 15 bodies match portal/index.html (1492 bytes).
+PASS static DHCP renew: CCTV, Kantor, WiFi Utara have expected IP/mask/gateway/DNS.
+PASS static FTP: authenticated upload completed (272 bytes).
+PASS static email: both recipients contain matching new messages.
+PASS ospf mesh: 210 unique directed pairs at 4/4; 212 outputs including retries.
+PASS ospf internet: 15 unique sources at 4/4; 15 outputs including retries.
+PASS ospf DNS: 45 correct answers (15 clients x 3 names).
+PASS ospf HTTP: 15 bodies match portal/index.html (1492 bytes).
+PASS ospf DHCP renew: CCTV, Kantor, WiFi Utara have expected IP/mask/gateway/DNS.
+PASS ospf FTP: authenticated upload completed (272 bytes).
+PASS ospf email: both recipients contain matching new messages.
+PASS static IPsec R-PUSAT encrypt: 230 -> 238.
+PASS static IPsec R-PUSAT decrypt: 54 -> 62.
+PASS static IPsec R-PELABUHAN encrypt: 54 -> 62.
+PASS static IPsec R-PELABUHAN decrypt: 230 -> 238.

@@ -1,0 +1,17 @@
+test_final_artifacts (test_artifact_validator.ArtifactValidatorTests.test_final_artifacts) ... ok
+test_rejects_host_range_beyond_broadcast (test_artifact_validator.ArtifactValidatorTests.test_rejects_host_range_beyond_broadcast) ... ok
+test_rejects_insufficient_cctv_leases (test_artifact_validator.ArtifactValidatorTests.test_rejects_insufficient_cctv_leases) ... ok
+test_rejects_kantor_exclusions_leaving_only_116_leases (test_artifact_validator.ArtifactValidatorTests.test_rejects_kantor_exclusions_leaving_only_116_leases) ... ok
+test_rejects_private_return_route_on_isp (test_artifact_validator.ArtifactValidatorTests.test_rejects_private_return_route_on_isp) ... ok
+test_rejects_temporary_scripting_module (test_artifact_validator.ArtifactValidatorTests.test_rejects_temporary_scripting_module) ... ok
+test_rejects_underlay_advertised_inside_gre (test_artifact_validator.ArtifactValidatorTests.test_rejects_underlay_advertised_inside_gre) ... ok
+test_rejects_unsaved_router_config (test_artifact_validator.ArtifactValidatorTests.test_rejects_unsaved_router_config) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.681s
+
+OK
+
+PASS controlled mutation: inverted ISP route check was detected by regression tests.
+Mutation executed in memory; repository source remained byte-identical.
+Validator SHA-256: 1fbef078fc6c2bc080494aa144e5ee5a8bb3b06e11ef692078583e787a859361

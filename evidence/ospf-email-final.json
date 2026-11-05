@@ -1,0 +1,86 @@
+{
+  "PC - PEGAWAI": {
+    "sent": [
+      {
+        "body": "Layanan email OSPF Kelompok 9 diuji setelah failover L1 dan L2 dipulihkan.",
+        "dest": "user-pelabuhan@k9.smartcity.lab",
+        "responseType": 2,
+        "subject": "Uji final OSPF K9 dari PC - PEGAWAI"
+      },
+      {
+        "body": "Layanan email OSPF Kelompok 9 diuji setelah failover L1 dan L2 dipulihkan.",
+        "dest": "user-pelabuhan@k9.smartcity.lab",
+        "responseType": 2,
+        "subject": "Uji final OSPF K9 dari PC - PEGAWAI"
+      },
+      {
+        "body": "Email dua arah berhasil setelah uji failover L1 dan L2.",
+        "dest": "user-pelabuhan@k9.smartcity.lab",
+        "responseType": 2,
+        "subject": "Verifikasi OSPF K9 - PC - PEGAWAI"
+      }
+    ],
+    "mail": [
+      {
+        "content": "Kantor Pelabuhan menerima laporan CCTV. Terima kasih. Salam, Pegawai Pelabuhan.",
+        "dateTime": "10.31.2026 04:56:32.000 AM",
+        "from": "user-pelabuhan@k9.smartcity.lab",
+        "pduSize": 0,
+        "pduType": "Mail",
+        "rcpt": "user-pusat@k9.smartcity.lab",
+        "subject": "Balasan Kantor Pelabuhan"
+      },
+      {
+        "content": "Email dua arah berhasil setelah uji failover L1 dan L2.",
+        "dateTime": "10.31.2026 05:25:39.910 AM",
+        "from": "user-pelabuhan@k9.smartcity.lab",
+        "pduSize": 0,
+        "pduType": "Mail",
+        "rcpt": "user-pusat@k9.smartcity.lab",
+        "subject": "Verifikasi OSPF K9 - PC KANTOR"
+      }
+    ]
+  },
+  "PC KANTOR": {
+    "sent": [
+      {
+        "body": "Layanan email OSPF Kelompok 9 diuji setelah failover L1 dan L2 dipulihkan.",
+        "dest": "user-pusat@k9.smartcity.lab",
+        "responseType": 2,
+        "subject": "Uji final OSPF K9 dari PC KANTOR"
+      },
+      {
+        "body": "Layanan email OSPF Kelompok 9 diuji setelah failover L1 dan L2 dipulihkan.",
+        "dest": "user-pusat@k9.smartcity.lab",
+        "responseType": 2,
+        "subject": "Uji final OSPF K9 dari PC KANTOR"
+      },
+      {
+        "body": "Email dua arah berhasil setelah uji failover L1 dan L2.",
+        "dest": "user-pusat@k9.smartcity.lab",
+        "responseType": 2,
+        "subject": "Verifikasi OSPF K9 - PC KANTOR"
+      }
+    ],
+    "mail": [
+      {
+        "content": "Rekaman CCTV Kota telah diupload ke ftp.k9.smartcity.lab. Salam, Pegawai Balai Kota.",
+        "dateTime": "10.31.2026 04:52:19.000 AM",
+        "from": "user-pusat@k9.smartcity.lab",
+        "pduSize": 0,
+        "pduType": "Mail",
+        "rcpt": "user-pelabuhan@k9.smartcity.lab",
+        "subject": "Laporan CCTV Kelompok 9"
+      },
+      {
+        "content": "Email dua arah berhasil setelah uji failover L1 dan L2.",
+        "dateTime": "10.31.2026 05:25:37.919 AM",
+        "from": "user-pusat@k9.smartcity.lab",
+        "pduSize": 0,
+        "pduType": "Mail",
+        "rcpt": "user-pelabuhan@k9.smartcity.lab",
+        "subject": "Verifikasi OSPF K9 - PC - PEGAWAI"
+      }
+    ]
+  }
+}

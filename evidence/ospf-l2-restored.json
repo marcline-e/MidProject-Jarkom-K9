@@ -1,0 +1,16 @@
+{
+  "PC - PEGAWAI": {
+    "output": "tracert 10.72.240.2\n\nTracing route to 10.72.240.2 over a maximum of 30 hops: \n\n  1   0 ms      0 ms      0 ms      10.72.224.1\n  2   0 ms      0 ms      0 ms      192.168.9.6\n  3   0 ms      0 ms      0 ms      10.72.240.2\n\nTrace complete.\n\nC:\\>",
+    "completed": {
+      "inputCommand": "tracert 10.72.240.2",
+      "status": 0
+    }
+  },
+  "PC KANTOR": {
+    "output": "ping 10.72.224.11\n\nPinging 10.72.224.11 with 32 bytes of data:\n\nReply from 10.72.224.11: bytes=32 time<1ms TTL=126\nReply from 10.72.224.11: bytes=32 time<1ms TTL=126\nReply from 10.72.224.11: bytes=32 time<1ms TTL=126\nReply from 10.72.224.11: bytes=32 time<1ms TTL=126\n\nPing statistics for 10.72.224.11:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n\nC:\\>",
+    "completed": {
+      "inputCommand": "ping 10.72.224.11",
+      "status": 0
+    }
+  }
+}

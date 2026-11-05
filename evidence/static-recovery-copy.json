@@ -1,0 +1,20 @@
+{
+  "R-PUSAT": [
+    [
+      "copy startup-config running-config",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ]
+  ],
+  "R-PELABUHAN": [
+    [
+      "copy startup-config running-config",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "output": "show ip route\nCodes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP\n       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area\n       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2\n       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP\n       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area\n       * - candidate default, U - per-user static route, o - ODR\n       P - periodic downloaded static route\n\nGateway of last resort is 10.72.241.37 to network 0.0.0.0\n\n     10.0.0.0/8 is variably subnetted, 10 subnets, 6 masks\nC       10.72.0.0/18 is directly connected, Vlan60\nL       10.72.0.1/32 is directly connected, Vlan60\nS       10.72.160.0/19 [1/0] via 10.72.241.54\nC       10.72.236.0/23 is directly connected, GigabitEthernet0/2\nL       10.72.236.1/32 is directly connected, GigabitEthernet0/2\nS       10.72.240.0/25 [1/0] via 10.72.241.54\nC       10.72.241.36/30 is directly connected, GigabitEthernet0/0\nL       10.72.241.38/32 is directly connected, GigabitEthernet0/0\nC       10.72.241.52/30 is directly connected, GigabitEthernet0/1\nL       10.72.241.53/32 is directly connected, GigabitEthernet0/1\nS*   0.0.0.0/0 [1/0] via 10.72.241.37\n --More-- \n%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/3/0 (60), with SW-WIFI-UTARA FastEthernet0/2 (1).\n\nR-UTARA#",
+    "completed": {
+      "inputCommand": "show ip route",
+      "status": 0
+    }
+  }
+]

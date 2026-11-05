@@ -1,0 +1,244 @@
+{
+  "R-PUSAT": [
+    [
+      "configure terminal",
+      {
+        "first": 0,
+        "second": "Enter configuration commands, one per line.  End with CNTL/Z.\n\n"
+      }
+    ],
+    [
+      "crypto isakmp policy 10",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "encr aes",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "authentication pre-share",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "group 5",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "exit",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "crypto isakmp key K9-GRE-IPsec-Lab! address 10.72.241.54",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "crypto ipsec transform-set K9-GRE esp-aes esp-sha-hmac",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "crypto map K9-IPSEC 10 ipsec-isakmp",
+      {
+        "first": 0,
+        "second": "% NOTE: This new crypto map will remain disabled until a peer\n        and a valid access list have been configured.\n\n"
+      }
+    ],
+    [
+      "set peer 10.72.241.54",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "set transform-set K9-GRE",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "match address 110",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "exit",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "access-list 110 permit gre host 10.72.241.37 host 10.72.241.54",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "interface GigabitEthernet0/2",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "crypto map K9-IPSEC",
+      {
+        "first": 0,
+        "second": "*Jan  3 07:16:26.785: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is ON\n\n"
+      }
+    ],
+    [
+      "end",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ]
+  ],
+  "R-PELABUHAN": [
+    [
+      "configure terminal",
+      {
+        "first": 0,
+        "second": "Enter configuration commands, one per line.  End with CNTL/Z.\n\n"
+      }
+    ],
+    [
+      "crypto isakmp policy 10",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "encr aes",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "authentication pre-share",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "group 5",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "exit",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "crypto isakmp key K9-GRE-IPsec-Lab! address 10.72.241.37",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "crypto ipsec transform-set K9-GRE esp-aes esp-sha-hmac",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "crypto map K9-IPSEC 10 ipsec-isakmp",
+      {
+        "first": 0,
+        "second": "% NOTE: This new crypto map will remain disabled until a peer\n        and a valid access list have been configured.\n\n"
+      }
+    ],
+    [
+      "set peer 10.72.241.37",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "set transform-set K9-GRE",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "match address 110",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "exit",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "access-list 110 permit gre host 10.72.241.54 host 10.72.241.37",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "interface GigabitEthernet0/0",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ],
+    [
+      "crypto map K9-IPSEC",
+      {
+        "first": 0,
+        "second": "*Jan  3 07:16:26.785: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is ON\n\n"
+      }
+    ],
+    [
+      "end",
+      {
+        "first": 0,
+        "second": "\n"
+      }
+    ]
+  ]
+}

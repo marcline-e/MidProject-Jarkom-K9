@@ -1,0 +1,30 @@
+[
+  [
+    "configure terminal",
+    {
+      "first": 0,
+      "second": "Enter configuration commands, one per line.  End with CNTL/Z.\n\n"
+    }
+  ],
+  [
+    "interface GigabitEthernet0/1",
+    {
+      "first": 0,
+      "second": "\n"
+    }
+  ],
+  [
+    "no shutdown",
+    {
+      "first": 0,
+      "second": "\n\n"
+    }
+  ],
+  [
+    "end",
+    {
+      "first": 0,
+      "second": "\n"
+    }
+  ]
+]

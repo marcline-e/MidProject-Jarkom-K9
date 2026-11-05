@@ -1,0 +1,23 @@
+{
+  "PC KANTOR": {
+    "output": "ipconfig /renew\n\n   IP Address......................: 10.72.240.2\n   Subnet Mask.....................: 255.255.255.128\n   Default Gateway.................: 10.72.240.1\n   DNS Server......................: 10.72.239.2\n\nC:\\>",
+    "completed": {
+      "inputCommand": "ipconfig /renew",
+      "status": 0
+    }
+  },
+  "CCTV KOTA": {
+    "output": "ipconfig /renew\n\n   IP Address......................: 10.72.96.11\n   Subnet Mask.....................: 255.255.224.0\n   Default Gateway.................: 10.72.96.1\n   DNS Server......................: 10.72.239.2\n\nC:\\>",
+    "completed": {
+      "inputCommand": "ipconfig /renew",
+      "status": 0
+    }
+  },
+  "HP-WIFI-UTARA": {
+    "output": "ipconfig /renew\n\n   IP Address......................: 10.72.0.11\n   Subnet Mask.....................: 255.255.192.0\n   Default Gateway.................: 10.72.0.1\n   DNS Server......................: 10.72.239.2\n\nC:\\>",
+    "completed": {
+      "inputCommand": "ipconfig /renew",
+      "status": 0
+    }
+  }
+}
